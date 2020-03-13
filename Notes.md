@@ -1,17 +1,14 @@
 # Notes for Docker
 
-
-
-
 #### Mongo DB
 
-docker network create net
+$ docker network create net
 
-docker run --network net -d -p 27017-27019:27017-27019 --name mongodb mongo:4.0.16
+$ docker run --network net -d -p 27017-27019:27017-27019 --name mongodb mongo:4.0.16
 
-docker exec -it mongodb bash
+$ docker exec -it mongodb bash
 
-docker run --network net  -d -e ME_CONFIG_MONGODB_SERVER=mongodb -p 8081:8081 mongo-express
+$ docker run --network net  -d -e ME_CONFIG_MONGODB_SERVER=mongodb -p 8081:8081 mongo-express
 
 ### Postegres 
 
@@ -58,7 +55,9 @@ docker run -it -v mysqldata5.7:/tmp ubuntu:14.04 /bin/bash
 
 **Links:**
 https://dev.mysql.com/doc/refman/5.7/en/docker-mysql-getting-started.html
+
 https://medium.com/better-programming/setting-up-mysql-database-in-a-docker-d6c69a3e9afe
+
 https://hub.docker.com/r/mysql/mysql-server/tags/
 
 
