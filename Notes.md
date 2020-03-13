@@ -21,7 +21,13 @@ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgre
 
 docker run  --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" mysql
 
+Get password  from logs / set  password in docker variables:
+
+docker logs mysql5.7  2>&1 | grep GENERATED
+
+
 **Create image**
+
 docker volume create --name mysqldata5.7 
 
 docker run --name=mysql5.7  -v mysqldata5.7:/var/lib/mysql --env="MYSQL_ROOT_PASSWORD=mypassword" -d mysql/mysql-server:5.7.28-1.1.13
@@ -30,13 +36,15 @@ docker exec -it mysql5.7  mysql --host=localhost --user=root --password=mypasswo
 
 
 **Backup and restore**
+
 docker exec mysql5.7 /usr/bin/mysqldump -u root --password=mypassword computers > backup.sql
 
 cat backup.sql | docker exec -i mysql5.7 /usr/bin/mysql -u root --password=mypassword computers
 
 
 
-** Run SQL **
+**Run SQL**
+
 cat data.sql  | docker exec  -i  mysql5.7 /usr/bin/mysql -u user --password=password  computers
 
 **Debug**
@@ -45,8 +53,7 @@ docker exec -it mysql5.7  /bin/bash
 docker run -it -v mysqldata5.7:/tmp ubuntu:14.04 /bin/bash
 
 
-*Get password  from logs / set  password in docker variables:*
-docker logs mysql5.7  2>&1 | grep GENERATED
+
 
 
 **Links:**
@@ -57,7 +64,7 @@ https://hub.docker.com/r/mysql/mysql-server/tags/
 
 ### Jenkins
 
-*Run Jenkins:*
+**Run Jenkins:**
 
 docker run -p 8080:8080   -v /var/run/docker.sock:/var/run/docker.sock  --name jenkins jenkins/jenkins:lts
 
@@ -68,9 +75,10 @@ docker run -p 8080:80  -v /home/ajcm/git/react-material-ui:/usr/share/nginx/html
 
 ### Etc
 
-*Check volumes:*
+**Check volumes:**
 
 docker inspect -f '{{ .Mounts }}' containerid
+
 docker run -it -v /tmp:/tmp ubuntu:14.04 /bin/bash
 
 
@@ -78,6 +86,7 @@ docker run -it -v /tmp:/tmp ubuntu:14.04 /bin/bash
 
 
 
-~Armando Marques
+Armando Marques
+
  mail@armandomarques.com
-~
+
