@@ -11,7 +11,7 @@ Docker repository: [https://hub.docker.com/u/ajcm](https://hub.docker.com/u/ajcm
 
 - **alpine_nginx1.17**: vanila alpine with nginx, custom configuration in config
 
-**alpine_php7.3**: alpine running a php deamon, can be used as server
+- **alpine_php7.3**: alpine running a php deamon, can be used as server
 
 - **helloword**: test image with a static link hello word (made in C)
 
