@@ -10,11 +10,6 @@ services:
     ports:
       - 8090:8080
 
-  appserver2:
-    image: adminer
-    restart: always
-    ports:
-      - 8090:8080
 
   db:
     image: mysql:5.6
