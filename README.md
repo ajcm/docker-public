@@ -17,5 +17,7 @@ Docker repository: [https://hub.docker.com/u/ajcm](https://hub.docker.com/u/ajcm
 
 
 
-~Armando Marques
- mail@armandomarques.com~
+
+
+Armando Marques
+ mail@armandomarques.com
