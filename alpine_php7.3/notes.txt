@@ -1,0 +1,2 @@
+docker run -d --name=phpserver -v /home/myself/dockergit/mysql/phpserver/www/:/var/www/html -p8088:8080  ajcm/phpserver
+
