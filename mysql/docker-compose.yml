@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+
+  mysql57:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_USER: xxxxx
+      MYSQL_PASSWORD: xxxxx
+      MYSQL_ROOT_PASSWORD: xxxx
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+     - 3306:3306
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080
+
+
+volumes:
+  db:
+
+
