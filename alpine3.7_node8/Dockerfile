@@ -5,8 +5,7 @@
 FROM ajcm/alpine3.7-dev:latest
 
 # install nodejs 8
-RUN apk add --no-cache nodejs git
-
+RUN apk add --no-cache nodejs
 
 CMD ["node"]
 

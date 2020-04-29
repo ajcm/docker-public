@@ -13,11 +13,15 @@ RUN apk add --no-cache --virtual .build-deps-full \
         libgcc \
         linux-headers \
         make \
-        python 
+        python \
+        bash \
+        curl \
+        git  \
+        mysql-client
+    
+   
 
-RUN apk add --no-cache --virtual .build-deps-full bash
-
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
 
 
 LABEL "com.example.vendor"="mail@armandomarques.com"

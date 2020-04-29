@@ -1,6 +1,8 @@
 
 ### Mysql
 
+$docker run -it --network some-network --rm mysql mysql -hsome-mysql -uexample-user -p
+
 $ docker run  --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" mysql
 
 Get password  from logs / set  password in docker variables:
