@@ -2,15 +2,8 @@
 
 <body>
 
-
-<?php
-echo "<h5>PHP</h5>";
-echo 'Current PHP version: ' . phpversion();
-?>
-
-
 <p>
-    <strong> Request </strong>
+    <strong> Request Headers </strong>
     <?php
 
     foreach (getallheaders() as $name => $value) {
