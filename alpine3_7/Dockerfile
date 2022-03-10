@@ -1,6 +1,7 @@
-#docker build . -t ajcm/alpine3.7-dev:latest
-#docker push  ajcm/alpine3.7-dev:latest
-#docker run  -it --rm ajcm/alpine3.7-dev:latest /bin/bash
+#docker build . -t ajcm/alpine3_7:latest
+#docker run  -it --rm ajcm/alpine3_7:latest /bin/bash
+#docker push  ajcm/alpine3_7:latest
+
 
 FROM scratch
 ADD alpine-minirootfs-3.7.3-x86_64.tar.gz /

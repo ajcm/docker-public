@@ -1,8 +1,8 @@
-#docker build .  -t ajcm/alpine3.7-node8
-#docker run -it ajcm/alpine3.7-node8
-#docker run -it --rm ajcm/alpine3.7-node8:latest
+#docker build .  -t ajcm/alpine-node8
+#docker run -it ajcm/alpine-node8
+#docker run -it --rm ajcm/alpine-node8
 
-FROM ajcm/alpine3.7-dev:latest
+FROM ajcm/alpine3_7:latest
 
 # install nodejs 8
 RUN apk add --no-cache nodejs

@@ -1,0 +1,4 @@
+docker build . -t ajcm/alpine3.7-dev:latest
+docker push  ajcm/alpine3.7-dev:latest
+docker run  -it --rm ajcm/alpine3.7-dev:latest /bin/bash
+
