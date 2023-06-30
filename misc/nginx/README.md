@@ -1,6 +1,6 @@
 ## nginx
 
-Image with Nginx and context configuration
+Image with Nginx and context configuration.
 
 `docker build . -t ajcm/nginx:latest`
 

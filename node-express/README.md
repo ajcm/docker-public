@@ -1,6 +1,6 @@
 ## node express
 
-Express node image with echo
+Express node image with echo.
 
 `docker build . -t ajcm/express-node`
 

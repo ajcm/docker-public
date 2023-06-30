@@ -3,6 +3,9 @@
 
 Docker repository: [https://hub.docker.com/u/ajcm](https://hub.docker.com/u/ajcm) 
 
+Git repository: [https://github.com/ajcm/docker-public](https://github.com/ajcm/docker-public)
+
+
 
 **helloword** 
 
