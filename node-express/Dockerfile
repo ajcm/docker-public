@@ -1,6 +1,3 @@
-#docker build . -t ajcm/alpine_node
-#docker run -d -p8080:8080 ajcm/alpine_node
-
 FROM node:alpine
 
 WORKDIR /usr/app
@@ -13,3 +10,8 @@ COPY . .
 EXPOSE 8080
 
 CMD ["npm","start"]
+
+
+LABEL "com.example.vendor"="mail@armandomarques.com"
+LABEL version="1.0"
+LABEL description="Express node image with echo."
