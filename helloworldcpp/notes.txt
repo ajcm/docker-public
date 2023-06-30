@@ -1,6 +1,0 @@
-gcc -static -o  helloworld helloworld.c 
-
-
-
-
-
