@@ -22,19 +22,17 @@ Image with alpine 3.x with NodeJs 18 (from apk).
 
 `docker run -it --rm ajcm/alpine-node`
 
-**alpine_nginx1.17**
+**apache-php**
 
-vanila alpine with nginx, custom configuration in config
+Apache 2.4 with php8 and adminer.
 
-**alpine_php7.3**
+`docker run  -p8080:80 ajcm/apache-php:latest`
 
-alpine running a php deamon, can be used as server
+**apache-php-custom**
+
+Custom Apache + php8 and custom scripts.
+
+`docker run   -p 8080:80  ajcm/apache-php-custom:latest`
 
 
 
-
-
-
-
-Armando Marques
- mail@armandomarques.com
