@@ -1,4 +1,0 @@
-docker build . -t ajcm/apache-php8:latest
-docker push  ajcm/apache-php8:latest
-docker run  -p8080:80 ajcm/apache-php8:latest
-
