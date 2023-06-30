@@ -1,31 +1,11 @@
-## alpine3.7-dev
+## alpine-node
 
-Test image with a static link hello word (made in C)
+Image with alpine 3.x with NodeJs 18 (from apk).
 
 `docker build .  -t ajcm/alpine-node`
-`docker run -it ajcm/alpine-node`
+
 `docker run -it --rm ajcm/alpine-node`
 
-### Build
-
-base image: alpine-minirootfs-3.7.3-x86_64.tar.gz
-
-<code>
-ADD alpine-minirootfs-3.7.3-x86_64.tar.gz /
-
-RUN apk add --no-cache --virtual .build-deps-full \
-        binutils-gold \
-        g++ \
-        gcc \
-        gnupg \
-        libgcc \
-        linux-headers \
-        make \
-        python \
-        bash \
-        curl \
-        git  \
-        mysql-client
-</code>
+`docker push ajcm/alpine-node:latest`
 
 

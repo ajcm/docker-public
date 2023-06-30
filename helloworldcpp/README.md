@@ -13,11 +13,3 @@ Test image with a static link hello word (made in C)
 `gcc -static -o  helloworld helloworld.c `
 
 
-
-
-
-
-
-
-Armando Marques
- mail@armandomarques.com

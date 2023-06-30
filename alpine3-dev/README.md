@@ -1,4 +1,4 @@
-## alpine3-dev
+## alpine-dev
 
 Custom alpine 3.x image with dev tools.
 

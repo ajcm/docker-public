@@ -10,14 +10,15 @@ Test image with a static link hello word (made in C)
 
 `docker run ajcm/helloworld:latest` 
 
-**alpine3_dev** 
-
+**alpine-dev** 
 Image from alpine miniroot 3.x with build tools (unix, python, mysql)
 
 `docker run  -it --rm ajcm/alpine3-dev:latest /bin/bash` 
 
-**alpine3.7_node8**
-image from alpine3.7_dev with node8 installed with apk
+**alpine-node**
+Image with alpine 3.x with NodeJs 18 (from apk).
+
+`docker run -it --rm ajcm/alpine-node`
 
 **alpine_nginx1.17**
 vanila alpine with nginx, custom configuration in config
