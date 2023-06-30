@@ -1,4 +1,0 @@
-#NOTE This is FPM does not serve http
-docker run -p8080:8080 -v/home/ajcm/git/docker-public/alpine_php7.3/html:/var/www/html/  --env-file ./env  ajcm/alpine3.11-php7.4:latest
-
-
