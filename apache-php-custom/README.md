@@ -1,6 +1,6 @@
 ## apache-php-custom
 
-Custom Apache + php8.
+Custom: Apache + Php8.2 + Mysql cli + Utils
 
 `docker build . -t ajcm/apache-php-custom:latest`
 
