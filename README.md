@@ -1,10 +1,9 @@
 # Docker Images
-### Public access
 
+### Public access
 Docker repository: [https://hub.docker.com/u/ajcm](https://hub.docker.com/u/ajcm) 
 
 Git repository: [https://github.com/ajcm/docker-public](https://github.com/ajcm/docker-public)
-
 
 
 **helloword** 
@@ -30,12 +29,6 @@ Image with alpine 3.x with NodeJs 18 (from apk).
 Apache 2.4 with php8 and adminer.
 
 `docker run  -p8080:80 ajcm/apache-php:latest`
-
-**apache-php-custom**
-
-Custom Apache + php8 and custom scripts.
-
-`docker run   -p 8080:80  ajcm/apache-php-custom:latest`
 
 **node-express**
 
