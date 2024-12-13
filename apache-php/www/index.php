@@ -13,7 +13,7 @@ Base image: php:8-apache
 
 <br/>
 
-<img src="nelson.jpg" width="150px">
+<img src="nelson.png" width="150px">
 
 <p><a href="/request.php">check requests </a></p>
 <p><a href="/env.php">env variables </a></p>
